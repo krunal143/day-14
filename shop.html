@@ -1,0 +1,174 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="bootstrap-star-rating.js"></script>
+
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>
+
+    <title>Shop | Tesla</title>
+    <script>
+
+        function bodyBgchange() {
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
+        }
+
+        $(document).ready(function () {
+            $("#D1").accordion();
+
+            $("#stars-default").rating('create',
+                {
+                    coloron: 'red',
+                    onClick: function () { alert('The rating is ' + this.attr('data-rating')); }
+                });
+
+
+            $("#stars-default").rating('create',
+                {
+                    coloron: 'yellow',
+                    onClick: function () { alert('The rating is ' + this.attr('data-rating')); }
+                });
+            $("#tab").tabs()
+            $("#spin").spinner({
+                min: 0,
+                max: 100,
+                color: black
+            })
+
+
+
+        })
+
+
+
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #logo {
+            width: 10vw;
+        }
+
+        #content {
+            height: 500px;
+            width: 90%;
+            margin-left: 5%;
+
+            border-radius: 10px;
+            margin-top: 5%;
+            border-top: 2px solid gray
+        }
+
+        #subcontent1 {
+            height: 400px;
+            width: 30%;
+            margin-left: 2%;
+            float: left;
+            margin-top: 5%;
+            background-image: url("charger.jpg");
+            border-radius: 10px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #subcontent2 {
+            height: 500px;
+            width: 60%;
+            margin-left: 2%;
+             float: left
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html">
+                        <img src="logo.png" alt="logo" id="logo">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="model_s.html">Model S</a></li>
+                        <li><a href="https://www.tesla.com/model3">Model 3</a></li>
+                        <li><a href="https://www.tesla.com/modelx">Model X</a></li>
+                        <li><a href="SignUp.html">Sign Up</a></li>
+                        <li class="active"><a href="#">Shop</a></li>
+                        <li><a href="#" onclick="bodyBgchange()">Change Theme</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="content">
+        <div id="subcontent1"></div>
+        <div id="subcontent2">
+            <h1>Tesla 500W Charger</h1>
+             <div id="stars-default"><input type="hidden" name="rating"/></div>
+
+            <span style="color:red;font-size:25px">-20%</span>
+            <span style="font-size:30px">₹45000</span><br>
+            <small>M.R.P.:<strike>₹50,000</strike></small>
+            <h4>Inclusive of all taxes</h4>
+            <input type="checkbox"> &nbsp;Apply ₹45000 coupon.<a href="#">Terms</a>
+            <h5><b>EMI</b> No EMI available On this product<a href="#"> EMI options</a></h5>
+            <div>
+                <h4><b>Quntity :</b> </h4>
+                <input type="number" id="spin" value="1" />
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div id="D1">
+        <div>A Premium </div>
+        <p>A royal blue wall charger</p>
+        <div>Stylish</div>
+        <p>Aqua Light Charger</p>
+        <div>A Royal</div>
+        <p>Special Dark Edition Charger</p>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+<html>
+
+<head>
+    <title>Home | Tesla</title>
+    <link rel="stylesheet" href="BOOTSTRAP/bootstrap.css" />
+
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #logo {
+            width: 10vw;
+        }
+
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        .bg-image {
+
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .img1 {
+            background-image: url("interior.jpg");
+            animation-timing-function: linear;
+        }
+
+        .img2 {
+            background-image: url("models.jpg");
+        }
+
+        .img3 {
+            background-image: url("model3.jpg");
+        }
+
+        .img4 {
+            background-image: url("modelx.jpg");
+        }
+
+
+
+        #imgtext {
+            font-size: large;
+            color: black;
+
+        }
+
+        div {
+            animation: mymove 5s 1;
+        }
+
+
+        @keyframes mymove {
+            from {
+                opacity: 0%;
+            }
+
+            to {
+                opacity: 100%;
+            }
+        }
+
+
+        #buttonposition1 {
+            position: fixed;
+            top: 700px;
+            left: 20%;
+        }
+
+        #buttonposition2 {
+            position: fixed;
+            top: 700px;
+            left: 70%;
+        }
+
+        .btn-default {
+            background-color: rgb(0, 0, 0);
+            color: silver;
+            border-color: navajowhite;
+        }
+
+        footer {
+            background-size: cover;
+            text-align: center;
+            height: 15vh;
+
+        }
+
+        h3 {
+            padding: 20px;
+            margin-top: 0;
+        }
+
+        h5 {
+            margin: 0px;
+        }
+
+        @media(min-width:400px) {
+            #buttonposition1 {
+                position: fixed;
+                top: 700px;
+                left: 20%;
+            }
+
+            #buttonposition2 {
+                position: fixed;
+                top: 700px;
+                left: 70%;
+            }
+        }
+
+        @media(min-width:768px) {
+            #buttonposition1 {
+                position: fixed;
+                top: 760px;
+                left: 20%;
+            }
+
+            #buttonposition2 {
+                position: fixed;
+                top: 760px;
+                left: 70%;
+            }
+        }
+
+        @media(min-width:992px) {
+            #buttonposition1 {
+                position: sticky;
+                top: 700px;
+                left: 20%;
+            }
+
+            #buttonposition2 {
+                position: sticky;
+                top: 700px;
+                left: 70%;
+            }
+        }
+
+        @media(min-width:1201px) {
+            #buttonposition1 {
+                position: fixed;
+                top: 700px;
+                left: 20%;
+            }
+
+            #buttonposition2 {
+                position: fixed;
+                top: 700px;
+                left: 70%;
+            }
+        }
+    </style>
+    <script>
+         function bodyBgchange() {
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="day11_newweb.html">
+                        <img src="logo.png" alt="logo" id="logo">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li><a href="model_s.html">Model S</a></li>
+                        <li><a href="https://www.tesla.com/model3">Model 3</a></li>
+                        <li><a href="https://www.tesla.com/modelx">Model X</a></li>
+                        <li><a href="SignUp.html">Sign Up</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="#" onclick="bodyBgchange()">Change Theme</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div>
+            <div class="bg-image img1" style="z-index: -1;">
+                <div TYPE="Buttons" class="btn btn-default" id="buttonposition1" style="text-decoration: none;">
+                    <a href="model_s.html" style="text-decoration: none;">Order Now
+                </div></a>
+                <div TYPE="Buttons" class="btn btn-default" id="buttonposition2">View Order</div>
+            </div>
+            <div class="bg-image img2"></div>
+            <div class="bg-image img3"></div>
+            <div class="bg-image img4"></div>
+        </div>
+    </main>
+    <footer>
+        <h3>About Us</h3>
+        <h5>Tesla Headquarters - Gigafactory Texas · 1 Tesla Road. Austin, TX 78725;</h5>
+
+    </footer>
+</body>
+
+</html>

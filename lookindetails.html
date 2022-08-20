@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="BOOTSTRAP/bootstrap.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #logo {
+            width: 10vw;
+        }
+
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        .container {
+
+            width: 80%;
+            height: 85%;
+            border-radius: 10%;
+        }
+
+
+        h3 {
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: 7vh;
+            background-color: #000;
+            text-align: center;
+            color: white;
+            float: none;
+            border: 2px solid;
+            border-color: white;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+
+            $("#toggle").click(function () {
+                if ($(this).text() == "hide") {
+                    $(this).text("show");
+                } else {
+                    $(this).text("hide");
+                };
+                $("div").toggle(3000);
+            });
+
+            $("#imgadd").click(function () {
+                if ($(this).text() == "+") {
+                    // $("img").height($("img").height() + 50);
+                    $("img").width($("img").width() + 50);
+                }
+            });
+
+            $("#imgrm").click(function () {
+                // $("img").height($("img").height() - 50);
+                $("img").width($("img").width() - 50);
+
+            });
+
+
+        });
+        function demoAlert() {
+            sele("Enter Your Country")
+        }
+        function demoAlert1() {
+            confirm("Are You Sure ?")
+        }
+        function bodyBgchange() {
+            document.body.style.backgroundColor = "black";
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html">
+                        <img src="logo.png" alt="logo" id="logo">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="model_s.html">Model S</a></li>
+                        <li><a href="https://www.tesla.com/model3">Model 3</a></li>
+                        <li><a href="https://www.tesla.com/modelx">Model X</a></li>
+                        <li><a href="SignUp.html" onclick="demoAlert1()">Sign Up</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="#" onclick="bodyBgchange()">Change Theme</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <h3> Look Deeply</h3>
+</body>
+
+</html>
